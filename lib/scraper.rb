@@ -36,6 +36,17 @@ class Scraper
     end
   end
   
+<<<<<<< HEAD
+=======
+  def get_page
+    Nokogiri::HTML(open("http://learn-co-curriculum.github.io/site-for-scraping/courses"))
+  end
+  
+  def get_courses
+    
+    get_page.css(".gr__learn-co-curriculum_github_io")
+  end
+>>>>>>> 1fad14421a4009325d7aa207c703b17914deea02
   
 end
 
